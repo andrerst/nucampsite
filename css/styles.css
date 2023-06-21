@@ -35,3 +35,7 @@ header {
     background-color: #901CAD;
 }
 
+.navbar-toggler {
+    margin-left: auto;
+}
+
