@@ -1,0 +1,60 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background: rgba(113, 113, 255, 0.5);
+}
+
+h1, h2, h3 {
+    font-family: "Lobster", cursive;
+}
+
+h2 {
+    color: #3046C5
+}
+
+header h2 {
+    color: #3d28df
+}
+
+.site-footer {
+    background-image: linear-gradient(rgba(255, 255, 0, 0.5), white);
+    padding: 20px 0;
+}
+
+header {
+    padding: 48px;
+    background-image: linear-gradient(to right, rgba(255, 255, 0, 0.5), rgba(0, 221, 29, 0.5));
+    color: white;
+}
+
+.row-content {
+    padding: 50px 10px;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: blue;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
+
+.accordion-button {
+    background-color: #d3d3d3;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+    border: solid blue;
+}
+
