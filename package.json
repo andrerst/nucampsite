@@ -1,18 +1,22 @@
 {
   "name": "nucampsite",
   "version": "1.0.0",
-  "description": "This is a website for fictional campsites review website, caled Nucamp",
+  "description": "This is a website for fictional campsites review website, called Nucamp",
   "main": "index.html",
   "scripts": {
     "lite": "lite-server",
     "scss": "sass css:css",
-    "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
   },
   "author": "Andre Stefanini",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
