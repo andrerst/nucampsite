@@ -6,17 +6,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
+    <!-- First: Bootstrap CSS. Additional CSS must be placed AFTER Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
-    <!-- Additional CSS must be placed AFTER Bootstrap CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="css/styles.css" />
-
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <!-- Font Icons Reference: https://fontawesome.com/v4/icons/ -->
-
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
     <title>Nucamp: A Better Way To Camp</title>
 
@@ -342,8 +339,13 @@
             </div>
         </div>
     </footer>
-    <!-- Bootstrap JavaScript plugins.-->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+    <!-- Bootstrap JavaScript plugins (initial for the project dev):
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
+    -->
+    <!-- build:js js/main.js -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- endbuild -->
 
 
     <!-- This JavaScript was inserted to support Tooltips before. Now the "Reserve Campsite" at the top right of the page (inside the header) is activating a Modal, so there is no Tooltips on it anymore. 
